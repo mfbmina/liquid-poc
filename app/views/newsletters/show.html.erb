@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+<p> Subject: <%= @newsletter.subject %></p>
+
+<p> Body: <%= @newsletter.body %></p>
+
+<%= link_to 'Edit', edit_newsletter_path(@newsletter) %> |
+<%= link_to 'Back', newsletters_path %>

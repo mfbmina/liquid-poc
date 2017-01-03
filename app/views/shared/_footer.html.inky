@@ -1,0 +1,26 @@
+<container class="footer float-center">
+	<row>
+		<columns>
+			<center>
+				<p class="text-center">
+					 | Av. Brigadeiro Faria Lima, 1306, cj 21 - São Paulo, SP - Brasil
+					<br />
+					<a href="http://www..com">www..com</a> |
+					<a href="#">Fale com a gente!</a>
+				</p>
+			</center>
+		</columns>
+	</row>
+	<row>
+		<columns>
+			<center>
+				<p class="text-center">
+					<strong>Respeitamos a sua privacidade.</strong>
+					<br>
+					Caso não deseje mais receber nossas comunicações, <a href="#">cancele sua inscrição</a>.
+				</p>
+			</center>
+		</columns>
+	</row>
+  <%= render partial: "shared/footer_social" %>
+</container>

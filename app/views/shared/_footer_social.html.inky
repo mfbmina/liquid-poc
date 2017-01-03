@@ -1,0 +1,49 @@
+<row class="footer-social">
+  <columns small="12" large="6">
+    <center>
+      <p class="text-center">
+        Baixe nossos Aplicativos
+      </p>
+      <row>
+        <columns small="4"></columns>
+        <columns small="2">
+          <a href="#">
+            <%= image_tag "newsletters/ico-ios.png", class: 'text-center' %>
+          </a>
+        </columns>
+        <columns small="2">
+          <a href="#">
+            <%= image_tag "newsletters/ico-android.png", class: 'text-center' %>
+          </a>
+        </columns>
+        <columns small="4"></columns>
+      </row>
+    </center>
+  </columns>
+  <columns small="12" large="6">
+    <center>
+      <p class="text-center">
+        Siga o
+      </p>
+      <row>
+        <columns small="3"></columns>
+        <columns small="2">
+          <a href="#">
+            <%= image_tag "newsletters/ico-facebook.png", class: 'text-center' %>
+          </a>
+        </columns>
+        <columns small="2">
+          <a href="#">
+            <%= image_tag "newsletters/ico-instagram.png", class: 'text-center' %>
+          </a>
+        </columns>
+        <columns small="2">
+          <a href="#">
+            <%= image_tag "newsletters/ico-linkedin.png", class: 'text-center' %>
+          </a>
+        </columns>
+        <columns small="3"></columns>
+      </row>
+    </center>
+  </columns>
+</row>

@@ -1,0 +1,38 @@
+<div class="wrapper">
+  <div class="container">
+    <h1>
+      Nova newsletter
+      <div class="pull-right">
+        <%= link_to "Voltar", newsletters_path, class: "btn btn-default btn-lg" %>
+      </div>
+    </h1>
+    <hr>
+    <div class="row">
+      <div class="col-md-12">
+        <%= form_for(@newsletter) do |f| %>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <%= f.label :subject %>
+                <%= f.text_field :subject, class: "form-control input-lg" %>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <%= f.label :body %> <%= link_to 'Preview', '#', id: 'preview', class: 'pull-right' %>
+                <div id="email_body">
+                  <%= f.text_area :body, class: "form-control input-lg", rows: 10 %>
+                </div>
+                <div id="email_preview" style="display: none;">
+                  <iframe src="" width="100%" height="1000" id="email_preview_iframe"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div clasa="clearfix"></div>
+          <%= submit_tag 'Cadastrar newsletter', class: "btn btn-success btn-lg btn-block" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
